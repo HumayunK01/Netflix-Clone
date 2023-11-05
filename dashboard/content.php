@@ -54,8 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<script defer>
                 window.onload = function(){
                     Swal.fire(
-                        'Content Created Successfully!',
                         '',
+                        'Content Created Successfully!',
                         'success'
                     )
                     }

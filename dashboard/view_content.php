@@ -9,6 +9,35 @@ if (!isset($_SESSION["adminloggedin"]) || $_SESSION["adminloggedin"] !== true) {
     exit;
 }
 
+if (isset($_GET['delete_id'])) {
+    $delete_id = $_GET['delete_id'];
+
+    // Prepare a DELETE query
+    $delete_sql = "DELETE FROM content WHERE id = ?";
+
+    if ($stmt = $conn->prepare($delete_sql)) {
+        $stmt->bind_param("i", $delete_id);
+
+        if ($stmt->execute()) {
+            echo "<script defer>
+                window.onload = function(){
+                    Swal.fire(
+                        '',
+                        'Content has been deleted Successfully!',
+                        'success'
+                    )
+                    }
+                </script>";
+
+            // echo "Content with ID $delete_id has been deleted.";
+        } else {
+            echo "Error deleting content: " . $stmt->error;
+        }
+
+        $stmt->close();
+    }
+}
+
 $sql = "SELECT * FROM content";
 
 $result = $conn->query($sql);
@@ -26,6 +55,7 @@ if ($result->num_rows > 0) {
             <th>TV Shows</th>
             <th>Movies</th>
             <th>Kids Anime</th>
+            <th>Action</th>
           </tr>";
 
     while ($row = $result->fetch_assoc()) {
@@ -41,13 +71,17 @@ if ($result->num_rows > 0) {
 
         $videoF = "../contents/video/" . $row["video"];
         echo "<td><video  width='340' height='140' muted controls>
-        <source src=" . $videoF . " type='video/mp4'></video></td>";
+        <source src='" . $videoF . "' type='video/mp4'></video></td>";
 
         echo "<td>" . ($row["popular"] ? "Yes" : "No") . "</td>";
         echo "<td>" . ($row["new_release"] ? "Yes" : "No") . "</td>";
         echo "<td>" . ($row["tv_shows"] ? "Yes" : "No") . "</td>";
         echo "<td>" . ($row["movies"] ? "Yes" : "No") . "</td>";
         echo "<td>" . ($row["kids_anime"] ? "Yes" : "No") . "</td>";
+
+        $delete_id = $row["id"];
+        echo "<td><a href='view_content.php?delete_id=$delete_id' class='btn btn-danger btn-sm'>Delete</a></td>";
+
         echo "</tr>";
     }
 
