@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require "../config.php";
 
@@ -80,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     }, 500);
 </script> -->
 
-<div class="container-fluid col-md-10 my-5">
+<div class="container col-md-4 my-5">
 
     <h2>Edit Profile</h2>
 
