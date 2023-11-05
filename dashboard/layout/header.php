@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" dynamic_href="content.php">Manage Content</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" dynamic_href="view_content.php">View Content</a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" dynamic_href="./profile.php">Profile</a>

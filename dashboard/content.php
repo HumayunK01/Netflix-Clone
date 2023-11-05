@@ -82,7 +82,15 @@ $conn->close();
 
 <body>
     <div class="container">
-        <h2 class="mt-5">Add Content</h2>
+        <div class="mt-5 d-flex justify-content-between align-items-center">
+            <div class="">
+                <h3 class="">Add Content</h3>
+            </div>
+            <div class="">
+                <a href="./view_content.php" class="btn btn-sm btn-success">View</a>
+                <a href="./update_content.php" class="btn btn-sm btn-warning d-none">Modify</a>
+            </div>
+        </div>
         <form action="content.php" method="post" enctype="multipart/form-data" class="mt-4 row">
             <div class="form-group mb-3 col-12">
                 <label for="title">Title:</label>
