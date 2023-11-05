@@ -12,7 +12,6 @@ if (!isset($_SESSION["adminloggedin"]) || $_SESSION["adminloggedin"] !== true) {
 if (isset($_GET['delete_id'])) {
     $delete_id = $_GET['delete_id'];
 
-    // Prepare a DELETE query
     $delete_sql = "DELETE FROM content WHERE id = ?";
 
     if ($stmt = $conn->prepare($delete_sql)) {
