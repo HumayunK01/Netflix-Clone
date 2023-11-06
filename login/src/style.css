@@ -1,0 +1,203 @@
+/* Import the 'Poppins' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navigation styles */
+nav {
+    background-color: transparent;
+    padding: 10px 20px;
+    /* Decreased padding for mobile */
+    height: auto;
+    /* Adjusted height for mobile */
+}
+
+/* Logo styles */
+nav .logo {
+    width: 150px;
+    /* Adjusted width for mobile */
+    cursor: pointer;
+}
+
+/* Logo image styles */
+nav .logo img {
+    width: 100%;
+}
+
+/* Main content styles */
+main {
+    width: 100%;
+    height: auto;
+    /* Adjusted height for mobile */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    /* Decreased padding for mobile */
+}
+
+/* Form styles */
+main .form {
+    width: 90%;
+    /* Adjusted width for mobile */
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Decreased gap for mobile */
+    padding: 30px 40px;
+    /* Decreased padding for mobile */
+}
+
+/* Login title styles */
+.login-title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 25px;
+    /* Increased font size for mobile */
+}
+
+/* Login input container styles */
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input field styles */
+.input-field {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    background-color: #333333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: none;
+    color: #fff;
+}
+
+/* Input field placeholder styles */
+.input-field::placeholder {
+    color: #fff;
+    letter-spacing: 1px;
+    opacity: 0.4;
+}
+
+/* Input field focus styles */
+.input-field:focus {
+    border-color: #E50914;
+}
+
+/* Login checkbox and "Need help?" link container styles */
+.login-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #ffffff8b;
+}
+
+/* Remember me checkbox styles */
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+/* Checkbox input styles */
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* "Need help?" link styles */
+.need-help {
+    color: #ffffff8b;
+    text-decoration: none;
+}
+
+/* Login button styles */
+.login-button {
+    background-color: #E50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    /* Increased margin-top for mobile */
+}
+
+/* Hover effect for the login button */
+.login-button:hover {
+    background-color: #cc0811;
+}
+
+/* Info text styles */
+.info {
+    display: flex;
+    color: #ffffff8b;
+    font-size: 15px;
+}
+
+/* Links within info text styles */
+.info a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5px;
+}
+
+/* Captcha styles */
+.captcha {
+    font-size: 12px;
+    color: #ffffff8b;
+}
+
+/* Styling for the special span within the Captcha */
+.captcha span {
+    color: #005CC8;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hover effect for the special span within the Captcha */
+.captcha span:hover {
+    text-decoration: underline;
+}
+
+/* Media query for mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Apply mobile-specific styles here */
+
+    /* Adjusted navigation padding for mobile */
+    nav {
+        padding: 20px;
+    }
+
+    /* Adjusted logo width for mobile */
+    nav .logo {
+        width: 100px;
+    }
+
+    /* Adjusted form padding and font size for mobile */
+    main .form {
+        padding: 20px;
+        font-size: 16px;
+    }
+}

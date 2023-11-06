@@ -64,7 +64,7 @@
               />
             </div> -->
                     <button class="primary__button">
-                        Get Started <i class="fal fa-chevron-right"></i>
+                        <a href="login/index.php">Get Started <i class="fal fa-chevron-right"></i></a>
                     </button>
                 </div>
             </div>
@@ -267,7 +267,7 @@
               <label class="email__label">Email Address</label>
             </div> -->
                     <button class="primary__button">
-                        Get Started <i class="fal fa-chevron-right"></i>
+                    <a href="login/index.php">Get Started <i class="fal fa-chevron-right"></i></a>
                     </button>
                 </div>
             </div>

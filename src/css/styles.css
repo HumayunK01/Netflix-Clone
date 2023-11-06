@@ -173,6 +173,11 @@ body {
   transition: all ease-in-out .3s;
 }
 
+.primary__button a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .primary__button:hover {
   background-color: #be010b;
 }
