@@ -1,5 +1,5 @@
 # Netflix-Clone
-![netflix-netflix-startup](https://github.com/HumayunK01/Netflix-Clone/assets/88980866/de869391-be5d-4ef8-8380-57d45af80233)
+![BrandAssets_Logos_01-Wordmark](https://github.com/HumayunK01/Netflix-Clone/assets/88980866/92dd6ae2-2297-448c-a181-ab7988f360ae)
 
 Welcome to the Netflix Clone Project with Fully Functional User Authentication and Movie Streaming Capabilities
 
