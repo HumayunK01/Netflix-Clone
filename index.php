@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
 
-
-    <?php include "./php_scripts/header.php";?>
+    <?php include "./php_scripts/header.php"; ?>
+    <style>
+        <?php include 'src/css/styles.css'; ?>
+    </style>
 
 </head>
 
@@ -314,7 +316,7 @@
             <p>Netflix India</p>
         </div>
     </footer>
-    <?php include "./php_scripts/footer.php";?>
+    <?php include "./php_scripts/footer.php"; ?>
 
 </body>
 
