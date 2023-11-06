@@ -1,5 +1,7 @@
 # Netflix-Clone
 
+![giphy](https://github.com/HumayunK01/Netflix-Clone/assets/88980866/824c1007-7fa4-40f3-b696-58dcbb1d5b3f)
+
 Welcome to the Netflix Clone Project with Fully Functional User Authentication and Movie Streaming Capabilities
 
 This GitHub repository hosts a sophisticated Netflix clone, complete with a robust user authentication system and an extensive library of movies available for streaming. Developed with cutting-edge technologies and best coding practices, this project allows users to seamlessly sign up and log in, granting access to a vast collection of movies for an immersive entertainment experience.
