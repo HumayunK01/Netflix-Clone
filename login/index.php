@@ -13,6 +13,17 @@
         <?php include 'src/style.css'; ?>
     </style>
     <!-- Link to an external CSS stylesheet for styling -->
+
+    
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
@@ -24,6 +35,9 @@
             <!-- Netflix logo with a link to the homepage -->
         </div>
     </nav>
+
+    <div id="google_translate_element"></div>
+    
     <main>
         <!-- Main content section -->
         <div class="form">
