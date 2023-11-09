@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
 
-    <?php include "./php_scripts/header.php"; ?>
+    <?php include "./php_scripts/header.php";?>
     <style>
-        <?php include 'src/css/styles.css'; ?>
+    <?php include 'src/css/styles.css';
+?>
     </style>
 
-    
 
-<script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en'
-            }, 'google_translate_element');
-        }
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en'
+        }, 'google_translate_element');
+    }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
 
 </head>
 
@@ -31,15 +33,15 @@
                 <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo"
                     class="brand__logo" />
             </div>
-            
+
             <div id="google_translate_element"></div>
 
             <div class="navbar__nav__items">
                 <div class="nav__item">
-                
+
                     <!-- <div class="dropdown__container"> -->
-                        <!-- <i class="fas fa-globe"></i> -->
-                        <!-- <select name="languages" id="languagesSelect" class="language__drop__down">
+                    <!-- <i class="fas fa-globe"></i> -->
+                    <!-- <select name="languages" id="languagesSelect" class="language__drop__down">
                             <option value="english" selected>English</option>
                             <option value="hindi">हिन्दी</option>
                         </select> -->
@@ -79,7 +81,7 @@
               />
             </div> -->
                     <button class="primary__button">
-                        <a href="login/index.php">Get Started <i class="fal fa-chevron-right"></i></a>
+                        <a href="./signup.php">Get Started <i class="fal fa-chevron-right"></i></a>
                     </button>
                 </div>
             </div>
@@ -282,7 +284,7 @@
               <label class="email__label">Email Address</label>
             </div> -->
                     <button class="primary__button">
-                    <a href="login/index.php">Get Started <i class="fal fa-chevron-right"></i></a>
+                        <a href="./signup.php">Get Started <i class="fal fa-chevron-right"></i></a>
                     </button>
                 </div>
             </div>
@@ -331,7 +333,7 @@
             <p>Netflix India</p>
         </div>
     </footer>
-    <?php include "./php_scripts/footer.php"; ?>
+    <?php include "./php_scripts/footer.php";?>
 
 </body>
 
