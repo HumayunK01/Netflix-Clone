@@ -11,6 +11,17 @@
         <?php include 'src/css/styles.css'; ?>
     </style>
 
+    
+
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </head>
 
 <body>
@@ -20,15 +31,19 @@
                 <img src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" alt="Netflix Logo"
                     class="brand__logo" />
             </div>
+            
+            <div id="google_translate_element"></div>
+
             <div class="navbar__nav__items">
                 <div class="nav__item">
-                    <div class="dropdown__container">
+                
+                    <!-- <div class="dropdown__container"> -->
                         <!-- <i class="fas fa-globe"></i> -->
-                        <select name="languages" id="languagesSelect" class="language__drop__down">
+                        <!-- <select name="languages" id="languagesSelect" class="language__drop__down">
                             <option value="english" selected>English</option>
                             <option value="hindi">हिन्दी</option>
-                        </select>
-                    </div>
+                        </select> -->
+                    <!-- </div> -->
                 </div>
                 <!-- <div class="nav__item">
             <button class="signin__button">Sign in</button>
